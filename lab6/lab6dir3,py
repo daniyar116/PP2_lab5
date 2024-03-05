@@ -1,0 +1,12 @@
+import os
+
+def test_path(path):
+    if os.path.exists(path):
+        print("Path exists.")
+        print(f"Filename: {os.path.basename(path)}")
+        print(f"Directory: {os.path.dirname(path)}")
+    else:
+        print("Path does not exist.")
+
+path = "your_specified_path_here"
+test_path(path)
